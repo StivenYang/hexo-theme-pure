@@ -31,16 +31,16 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: 一蓑烟雨 # 页面title
   favicon: /favicon.png
-  board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: false # 底部版权信息
+  board: <p>竹杖芒鞋轻胜马，谁怕？</p> # 站点公告
+  copyright: true # 底部版权信息
 
 # config
 config:
-  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
+  skin: theme-blue # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
-  toc: true # 是否开启文章章节目录导航
+  toc: false # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
@@ -127,28 +127,28 @@ comment:
     avatar: mm # gravatar style
     meta: nick,mail,link # custom comment header
     pageSize: 10 # pagination size
-    visitor: false # Article reading statistic https://valine.js.org/visitor.html
+    visitor: true # Article reading statistic https://valine.js.org/visitor.html
 
 # douban 豆瓣书单
 # Api：
   # https://developers.douban.com/wiki/?title=book_v2 图书
   # https://developers.douban.com/wiki/?title=movie_v2 电影
 # books：  
-  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+  #https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
 # movies: 
-  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
-  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
-  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
-  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
+  #https://api.douban.com/v2/movie/in_theaters 正在上映的电影
+  #https://api.douban.com/v2/movie/coming_soon 即将上映的电影
+  #https://api.douban.com/v2/movie/subject/:id 单个电影信息
+  #https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
-  user: # 豆瓣用户名
+  user: StivenYang # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
   
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
@@ -156,7 +156,7 @@ pv:
         
 # wordcount
 postCount:
-  enable: false
+  enable: true
   wordcount: true  # 文章字数统计
   min2read: true  # 阅读时长预计 
 
@@ -178,49 +178,51 @@ profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
-  author_title: Web Developer & Designer
-  author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  author: 恒子
+  author_title: Server Developer & Hacker
+  author_description: 多运动
+  location: Hangzhou, China
+  follow: https://github.com/stivenyang
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      github: https://github.com/stivenyang
+      weibo: https://www.weibo.com/u/1131400212
+      twitter: https://twitter.com/yangjiaheng1
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+      behance: https://www.behance.net/stivenyang44fa
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
+    破解: ★☆☆☆☆
+    Java: ★★★★☆
     Git: ★★★☆☆
-    Gulp: ★★★☆☆
     Javascript: ★★★☆☆
     HTML+CSS: ★★★☆☆
     Bootstrap: ★★★☆☆
     ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/stivenyang
+    Blog: http://hexo.hengshare.top
+    微博: https://www.weibo.com/u/1131400212
+    花瓣: http://huaban.com/iy9bur9tr8/
+    Behance: https://www.behance.net/stivenyang44fa
   # My Personal Labels
   labels:
-    - 前端
+    - 数据结构
+    - 算法设计
+    - 破解逆向
     - 前端开发
-    - 前端重构
-    - Web前端
-    - 网页重构
+    - 后端开发
+    - 机器学习
+    - 数据分析
   # My Personal Works
   works:
     name:
-      link: http://www.example.com
+      link: http://www.hengshare.top
       date: 2016
   # My Personal Projects
   projects:
