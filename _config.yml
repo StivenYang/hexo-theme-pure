@@ -148,11 +148,14 @@ douban:
 # PV
 pv:
   busuanzi:
-    enable: true  # 不蒜子统计
+    enable: false  # 不蒜子统计
   leancloud:
-    enable: false  # leancloud统计
-    app_id: # leancloud <AppID>
-    app_key: # leancloud <AppKey>
+    enable: true  # leancloud统计
+    app_id: syu5jNPCXCG44YvrjDM2dwVj-gzGzoHsz # leancloud <AppID>
+    app_key: g99gosAq11PF3erPs1xLDwAH # leancloud <AppKey>
+  baidu_tongji:
+    enable: false # 百度统计
+    sitecode: 154e25b56f05968647eebcd2c8dae4cd # 你的百度统计网站代码
         
 # wordcount
 postCount:
