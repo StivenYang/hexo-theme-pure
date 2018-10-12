@@ -178,10 +178,10 @@ profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 恒子
-  author_title: Server Developer & Hacker
-  author_description: 多运动
-  location: Hangzhou, China
+  author: StivenYang
+  author_title: 杨家恒
+  author_description: 竹杖芒鞋轻胜马，谁怕？
+  location: 杭州
   follow: https://github.com/stivenyang
   # Social Links
   social:
