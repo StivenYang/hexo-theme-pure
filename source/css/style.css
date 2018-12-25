@@ -27,7 +27,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html {
-  font-family: sans-serif;
+  font-family: monospace, Georgia, serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -150,6 +150,7 @@ pre,
 samp {
   font-family: monospace,monospace;
   font-size: 1em;
+  background-color: #f5f2f0;
 }
 
 button,
@@ -715,7 +716,7 @@ blockquote {
   margin: 0 0 20px;
   border: 1px dotted #eeeeee;
   border-left: 3px solid #eeeeee;
-  background-color: #fbfbfb;
+  background-color: #000;
 }
 
 blockquote p:last-child,
@@ -2706,6 +2707,10 @@ a.thumbnail.active {
   margin-bottom: 5px;
 }
 
+.media-heading a {
+  color: #fff;
+}
+
 .media-list {
   padding-left: 0;
   list-style: none;
@@ -2895,6 +2900,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
+  background-color: #234;
 }
 
 .modal-footer {
@@ -3255,11 +3261,11 @@ body {
 
 body {
   padding-right: 0 !important;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #333333;
-  background-color: #fff;
+  font-family: monospace,Helvetica,Georgia,-apple-system,system-ui,BlinkMacSystemFont,Tahoma,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+  background-color: #234;
 }
 
 a {
@@ -4727,7 +4733,7 @@ a.label:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #234;
   border: 1px solid #f2f2f2;
 }
 
@@ -5527,12 +5533,12 @@ pre .js .function {
 
 pre,
 .highlight {
-  background: #fafafa;
+  background: #000;
   margin: 10px 0;
   padding: 15px 10px;
   overflow: auto;
   font-size: 13px;
-  color: #4d4d4c;
+  color: #f11;
   line-height: 1.5;
 }
 
@@ -5566,7 +5572,7 @@ pre code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #f6f6f6;
+  background-color: #000;
   padding: 0 10px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -5634,7 +5640,7 @@ pre code {
   text-align: right;
   padding-right: 0;
   padding-left: 0;
-  color: #ccc;
+  color: #567;
 }
 
 /*
@@ -5644,11 +5650,11 @@ pre code {
 /* Hide for mobile, show later */
 
 .header {
-  background-color: #fbfbfb;
+  background-color: #234;
 }
 
 .sidebar {
-  background-color: #fdfdfd;
+  background-color: #234;
 }
 
 .sidebar .slimContent {
@@ -5962,7 +5968,13 @@ body.no-sidebar .sidebar {
 
 .widget .widget-title {
   font-size: 18px;
-  color: #000;
+  color: #fff;
+}
+
+.widget-body .content,
+.widget-body .link-list li a,
+.widget-body .work-list .clearfix a {
+  color: #999;
 }
 
 .widget time {
@@ -5982,7 +5994,15 @@ body.no-sidebar .sidebar {
 }
 
 .widget .category-link {
-  color: #0a6ebd;
+  color: #fff;
+}
+
+.tagcloud a,
+.item-title a,
+.archive-list-link,
+.tag-list-link,
+.category-list-link {
+  color: #999;
 }
 
 .category-list-count,
@@ -6091,7 +6111,7 @@ body.no-sidebar .sidebar {
 
 .bar.bar-footer {
   position: relative;
-  background-color: #fff;
+  background-color: #234;
   bottom: -15px;
 }
 
@@ -6104,7 +6124,7 @@ body.no-sidebar .sidebar {
   left: -15px;
   border-top: 1px solid #f6f6f6;
   border-bottom: 1px solid #fff;
-  background-color: #fff;
+  background-color: #234;
 }
 
 .bar .bar-inner {
@@ -6314,11 +6334,12 @@ body.no-sidebar .sidebar {
   overflow: hidden;
 }
 
-.repo-title {
+.repo-title a {
   padding: 0 15px;
   margin: 15px 0;
   font-size: 16px;
   font-weight: 600;
+  color: #fff;
 }
 
 .repo-body {
@@ -6400,6 +6421,10 @@ body.no-sidebar .sidebar {
   margin-top: 20px;
 }
 
+.article-link {
+  color: #fff;
+}
+
 /**
  * collection
  */
@@ -6426,11 +6451,12 @@ body.no-sidebar .sidebar {
 
 .article-list .article-title {
   font-size: 18px;
+  color: #fff;
 }
 
 .article-toc .toc-title {
   font-size: 18px;
-  color: #000;
+  color: #fff;
 }
 
 .article-toc .toc {
@@ -6446,6 +6472,10 @@ body.no-sidebar .sidebar {
 
 .article-toc .toc .toc-item {
   position: relative;
+}
+
+.toc-link {
+  color: #999;
 }
 
 .article-toc .toc .toc-item .markdownIt-Anchor {
@@ -6556,6 +6586,10 @@ body.okayNav-loaded {
 .okayNav__nav--visible li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.okayNav__nav--visible li a {
+  color: #999;
 }
 
 .okayNav__nav--visible li:first-child {
@@ -6922,7 +6956,7 @@ body.okayNav-loaded {
 
 .donate-box .donate-head:before,
 .donate-box .donate-head:after {
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: monospace,Arial,Helvetica,sans-serif;
   background: none;
   width: 0px;
   height: 0px;
@@ -6945,6 +6979,10 @@ body.okayNav-loaded {
 
 .donate-box .donate-footer {
   padding-top: 35px;
+}
+
+.donate-box .donate-footer li a {
+  background-color: #f2f2f2;
 }
 
 .donate-box .donate-payimg {
@@ -7006,13 +7044,13 @@ body.okayNav-loaded {
   box-shadow: none;
   font-weight: 200;
   border-radius: 0;
-  background: #fff;
+  background: #234;
   line-height: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 12px 28px 12px 20px;
   border-bottom: 1px solid #e2e2e2;
-  font-family: "Microsoft Yahei Light","Microsoft Yahei",Helvetica,Arial,sans-serif;
+  font-family: monospace,"Microsoft Yahei Light","Microsoft Yahei",Helvetica,Arial,sans-serif;
 }
 
 .ins-close {
@@ -7066,6 +7104,7 @@ body.okayNav-loaded {
 .ins-section .ins-section-header,
 .ins-section .ins-search-item {
   padding: 8px 15px;
+  background-color: #234;
 }
 
 .ins-section .ins-section-header {
@@ -7106,8 +7145,8 @@ body.okayNav-loaded {
 
 .ins-section .ins-search-item:hover,
 .ins-section .ins-search-item.active {
-  color: #fff;
-  background: #006bde;
+  color: red;
+  background: #000;
 }
 
 .ins-section .ins-search-item:hover .ins-slug,
