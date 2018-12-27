@@ -150,7 +150,7 @@ pre,
 samp {
   font-family: monospace,monospace;
   font-size: 1em;
-  background-color: #f5f2f0;
+  background-color: #000;
 }
 
 button,
@@ -5661,6 +5661,7 @@ pre code {
   padding: 20px;
 }
 
+#SODUCS, 
 .main {
   position: relative;
   min-height: 100vh;
@@ -5949,6 +5950,16 @@ body.no-sidebar .sidebar {
 #comments .gitment-footer-container,
 #comments .gitment-footer-project-link {
   display: none !important;
+}
+
+#SOHUCS {
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+  width: 58.33333% !important;
+  margin-left: 16.66667% !important;
+  position: relative !important;
+  min-height: 100vh !important;
+  padding: 15px !important;
 }
 
 .panel .label,
@@ -7858,7 +7869,8 @@ body.okayNav-loaded {
     width: 33.33333%;
   }
 
-  .main {
+  .main
+  {
     width: 62.5%;
     padding-right: 20px;
     padding-left: 20px;

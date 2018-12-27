@@ -7,5 +7,7 @@
 <% } else if (theme.comment.type === 'gitment') { %>
     <%- partial('_script/_comment/gitment', { script: true }) %>   
 <% } else if (theme.comment.type === 'valine') { %>
-    <%- partial('_script/_comment/valine', { script: true }) %>    
+    <%- partial('_script/_comment/valine', { script: true }) %>  
+<% } else if (theme.comment.type === 'changyan') { %>
+    <%- partial('_script/_comment/changyan', { script: true }) %>     
 <% } %>
