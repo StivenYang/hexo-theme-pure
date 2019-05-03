@@ -31,24 +31,24 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: 一蓑烟雨 # 页面title
+  title: 杨胖子 # 页面title
   favicon: /favicon.png
-  board: <p>竹杖芒鞋轻胜马，谁怕？</p> # 站点公告
-  copyright: false # 底部版权信息
+  board: <p>看清脚下的路，心存感恩，享受生活</p> # 站点公告
+  copyright: true # 底部版权信息
 
 # config
 config:
   skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
-  menu_highlight: false # 是否开启当前菜单高亮显示
-  thumbnail: false # enable posts thumbnail, options: true, false
+  menu_highlight: true # 是否开启当前菜单高亮显示
+  thumbnail: true # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
 # Pagination
 pagination:
   number: true
-  prev: 
+  prev:
     alwayShow: true
   next:
     alwayShow: true
@@ -56,18 +56,18 @@ pagination:
 # Sidebar
 sidebar: right
 widgets:
-  - board  
+  - board
+  - archive
   - category
   - tag
   - tagcloud
-  - archive
-  - recent_posts
+#  - recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
-# - category
-# - tagcloud
-# - archive  
+ - category
+ - tagcloud
+ - archive
 
 # widget behavior
 archive_type: 'monthly'
@@ -81,14 +81,14 @@ search:
 
 # Donate
 donate:
-  enable: true
+  enable: false
   # 微信打赏
   wechatpay:
     qrcode: images/donate/wechatpayimg.png
     title: 微信支付
   # 支付宝打赏
-  alipay: 
-    qrcode: images/donate/alipayimg.png 
+  alipay:
+    qrcode: images/donate/alipayimg.png
     title: 支付宝
 
 # Share
@@ -99,7 +99,7 @@ share:
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
-github: 
+github:
   username: StivenYang  # github username
 
 # Comment
@@ -108,15 +108,15 @@ github:
 comment:
   type: changyan  # 启用哪种评论系统
   disqus:  stivenyang # enter disqus shortname here
-  youyan: 
-    uid: 1783844 # enter youyan uid 
+  youyan:
+    uid: 1783844 # enter youyan uid
   livere:
-    uid: # enter youyan uid 
+    uid: # enter youyan uid
   gitment:
-    githubID: 
-    repo: 
-    ClientID: 
-    ClientSecret: 
+    githubID:
+    repo:
+    ClientID:
+    ClientSecret:
     lazy: false
   changyan:
     appid: cyu0jr7NJ
@@ -136,9 +136,9 @@ comment:
 # Api：
   # https://developers.douban.com/wiki/?title=book_v2 图书
   # https://developers.douban.com/wiki/?title=movie_v2 电影
-# books：  
+# books：
   #https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
-# movies: 
+# movies:
   #https://api.douban.com/v2/movie/in_theaters 正在上映的电影
   #https://api.douban.com/v2/movie/coming_soon 即将上映的电影
   #https://api.douban.com/v2/movie/subject/:id 单个电影信息
@@ -147,46 +147,46 @@ douban:
   user: 180636313 # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
-  
+
 # PV
 pv:
   busuanzi:
     enable: false  # 不蒜子统计
   leancloud:
-    enable: true  # leancloud统计
+    enable: false  # leancloud统计
     app_id: syu5jNPCXCG44YvrjDM2dwVj-gzGzoHsz # leancloud <AppID>
     app_key: g99gosAq11PF3erPs1xLDwAH # leancloud <AppKey>
   baidu_tongji:
-    enable: false # 百度统计
+    enable: true # 百度统计
     sitecode: 154e25b56f05968647eebcd2c8dae4cd # 你的百度统计网站代码
-        
+
 # wordcount
 postCount:
   enable: true
   wordcount: true  # 文章字数统计
-  min2read: true  # 阅读时长预计 
+  min2read: true  # 阅读时长预计
 
 # Plugins
 plugins:
   google_analytics: # enter the tracking ID for your Google Analytics
   google_site_verification: # enter Google site verification code
   baidu_analytics: # enter Baidu Analytics hash key
-  tencent_analytics: 
-  
+  tencent_analytics:
+
 # Miscellaneous
 twitter:
 google_plus:
 fb_admins:
-fb_app_id:  
-  
+fb_app_id:
+
 # profile
 profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: StivenYang
-  author_title: StivenYang
-  author_description: 竹杖芒鞋轻胜马，谁怕？
+  author: 杨胖子
+  author_title: won't too bad, won't too good
+  author_description: won't too bad, won't too good
   location: 杭州
   follow: https://github.com/stivenyang
   # Social Links
@@ -200,7 +200,7 @@ profile:
       # behance: https://www.behance.net/stivenyang44fa
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
-  # My Skills 
+  # My Skills
   skills:
     破解: ★☆☆☆☆
     Java: ★★★★☆

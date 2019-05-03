@@ -2,3 +2,5 @@
 node_modules
 tmp
 source/CNAME
+
+.idea
